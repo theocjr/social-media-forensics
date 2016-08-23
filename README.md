@@ -22,11 +22,13 @@ The code is organized into these three directories:
 * `classification`: code to learn a model and run a classifier.
 * `experiment_scripts`: examples of scripts to run the code in the above directories.
 
-Each script (except the ones presented in ``experiment_scripts` directory) has a `-h/--help` command-line option that presents an usage explanation detailing each option meaning.
+Each script (except the ones presented in `experiment_scripts` directory) has a `-h/--help` command-line option that presents an usage explanation describing each option meaning.
 
 #### Dataset Pre-Processing
 
-The `dataset_pre_processing` directory contains code to act over the dataset 
+The `dataset_pre_processing` directory contains code to act over the dataset in order to prepare the data to be run by the code in `classifier` directory. All the code are optional but `ngrams_generator.py`.
+
+
 ## Contributing
 
 1. Fork it!
