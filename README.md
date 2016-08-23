@@ -2,6 +2,10 @@
 
 This project aims to make available tools and software for forensics over social media.
 
+## Datasets
+
+TODO
+
 ## Installation
 
 TODO: Describe the installation process
@@ -14,10 +18,15 @@ Code related to tackle the problem of authorship attribution over micro blog soc
 
 The code is organized into these three directories:
 
-* `dataset_pre_processing` : code that pre-processes the data before to trigger the model learning. Examples of pre-processing is language filtering, data tagging and n-grams generation.
-* `classification` : code to learn a model and run a classifier.
-* `experiment_scripts` : examples of scripts to run the code in the above directories.
+* `dataset_pre_processing`: code that pre-processes the data before to trigger the model learning. Examples of pre-processing are language filtering, data tagging and n-grams generation.
+* `classification`: code to learn a model and run a classifier.
+* `experiment_scripts`: examples of scripts to run the code in the above directories.
 
+Each script (except the ones presented in ``experiment_scripts` directory) has a `-h/--help` command-line option that presents an usage explanation detailing each option meaning.
+
+#### Dataset Pre-Processing
+
+The `dataset_pre_processing` directory contains code to act over the dataset 
 ## Contributing
 
 1. Fork it!
