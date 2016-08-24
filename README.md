@@ -43,6 +43,8 @@ Below is a list of each file/directory with a brief explanation and example of i
   * Example of use: `filter_retweets_few_words.py  --source-dir-data my_input_dir --dest-dir my_output_dir --minimal-number-words 4 --debug`
 * `filter_language_by_tweet.py`: Code for reading authors' tweets filenames and decide which is the language based on an API of language detection (Currently guess-language 0.2 - https://pypi.python.org/pypi/guess-language - included in the project for convenience).
   * Example of use: `./filter_language_by_tweet.py --source-dir my_input_dir --dest-dir my_output_dir --language-detection-module ./guess-language-0.2/guess_language/ --debug`
+* `tagging_irrelevant_data.py`: Code for tagging irrelevant data as numbers, dates, times, URLs, hashtags and user references.
+  * Example of use: `./tagging_irrelevant_data.py --source-dir my_input_dir --dest-dir my_output_dir --debug`
 
 ## Contributing
 
