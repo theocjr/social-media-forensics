@@ -1,0 +1,5 @@
+*.pyc
+classification/PmSVM/pmsvm
+classification/fest/*.o
+classification/fest/festlearn
+classification/fest/festclassify
