@@ -21,12 +21,20 @@ The code is organized into these three directories:
 * `dataset_pre_processing`: code that pre-processes the data before to trigger the model learning. Examples of pre-processing are language filtering, data tagging and n-grams generation.
 * `classification`: code to learn a model and run a classifier.
 * `experiment_scripts`: examples of scripts to run the code in the above directories.
+* `char-grams_analysis`: code and scripts related to analysis of different char-grams.
 
-Each script (except the ones presented in `experiment_scripts` directory) has a `-h/--help` command-line option that presents an usage explanation describing each option meaning.
+Each Python program has a `-h/--help` command-line option that presents an usage explanation describing each option meaning.
 
 #### Dataset Pre-Processing
 
-The `dataset_pre_processing` directory contains code to act over the dataset in order to prepare the data to be run by the code in `classifier` directory. All the code are optional but `ngrams_generator.py`.
+The `dataset_pre_processing` directory contains code to act over the dataset in order to prepare it to be run by code in `classifier` directory. All the code are optional except `ngrams_generator.py` that must be run before triggering the classifiers. A normal order of invocation is:
+
+1. `filter_retweets_few_words.py`
+2. `filter_language_by_tweet.py`
+3. `tagging_irrelevant_data.py`
+4. `ngrams_generator.py`
+
+After running `ngrams_generator.py` the output is ready to be run by the classifiers presented in the `classification` directory.
 
 
 ## Contributing
