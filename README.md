@@ -36,6 +36,10 @@ The `dataset_pre_processing` directory contains code to act over the dataset in 
 
 After running `ngrams_generator.py` the output is ready to be run by the classifiers presented in the `classification` directory.
 
+Below is a list of each file/directory with a brief explanation and example of invocation (when applicable):
+
+1. `messages_persistence.py`: Auxiliary code for manipulating (read and write) Twitter messages in dataset files.
+
 
 ## Contributing
 
