@@ -38,7 +38,7 @@ After running `ngrams_generator.py` the output is ready to be run by the classif
 
 Below is a list of each file/directory with a brief explanation and example of invocation (when applicable):
 
-'>' * `messages_persistence.py`: Auxiliary code for manipulating (read and write) Twitter messages in dataset files.
+  * `messages_persistence.py`: Auxiliary code for manipulating (read and write) Twitter messages in dataset files.
 
 
 ## Contributing
