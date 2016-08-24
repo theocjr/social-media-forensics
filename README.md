@@ -27,7 +27,7 @@ Each Python program has a `-h/--help` command-line option that presents an usage
 
 #### Dataset Pre-Processing
 
-The `dataset_pre_processing` directory contains code to act over the dataset in order to prepare it to be run by code located in `classification` directory. All the code are optional except `ngrams_generator.py` that must be run before triggering the classifiers. A normal order of invocation is:
+The `dataset_pre_processing` directory contains code to act over the dataset in order to prepare it to be run by code located in `classification` directory. All the code are optional except `ngrams_generator.py` that must be run before triggering the classifiers. The idea is to invoke these scripts in a pipeline version, with flexibility to choose which scripts to run with the desired options. Different invocation orders can be chosen but a common one is:
 
 1. `filter_retweets_few_words.py`
 2. `filter_language_by_tweet.py`
