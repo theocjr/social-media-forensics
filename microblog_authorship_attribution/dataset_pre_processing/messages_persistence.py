@@ -1,7 +1,8 @@
 """
 Auxiliary code for manipulating (read and write) Twitter messages in dataset files.
 """
-    
+
+
 import codecs
 
 
