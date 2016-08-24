@@ -38,7 +38,9 @@ After running `ngrams_generator.py` the output is ready to be run by the classif
 
 Below is a list of each file/directory with a brief explanation and example of invocation (when applicable):
 
-  * `messages_persistence.py`: Auxiliary code for manipulating (read and write) Twitter messages in dataset files.
+* `messages_persistence.py`: Auxiliary code for manipulating (read and write) Twitter messages in dataset files.
+* `filter_retweets_few_words.py`: Code for reading authors' tweets filenames and remove retweets and tweets with few words.
+  * Example of use: `filter_retweets_few_words.py  --source-dir-data my_input_dir --dest-dir my_output_dir --minimal-number-words 4 --debug`
 
 
 ## Contributing
