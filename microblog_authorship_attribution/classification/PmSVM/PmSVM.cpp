@@ -48,7 +48,7 @@ bool verbose = true;
 // 'avgacc': average accuracy -- refer to the manual
 void ComputeAccuracies(const int size,const int nr_class,const int* gt,const int* pd,NUMBER& acc,NUMBER& avgacc)
 {
-	int* confusion = new int[nr_class*nr_class];
+	int* confusion = new int[(unsigned long)nr_class*nr_class];
 	std::fill(confusion,confusion+nr_class*nr_class,0.0);
 	acc = 0;
 	for(int i=0;i<size;i++) confusion[gt[i]*nr_class+pd[i]]++;
@@ -196,9 +196,9 @@ void problem::Clone(problem& dest)
 	dest.l = l; dest.n = n; dest.num_class = num_class;
 	dest.labels = new int[num_class];
 	std::copy(labels,labels+num_class,dest.labels);
-	dest.index_buf = (int*)malloc(sizeof(int)*allocated);
+	dest.index_buf = (int*)malloc(sizeof(int)*(unsigned long)allocated);
 	std::copy(index_buf,index_buf+allocated,dest.index_buf);
-	dest.value_buf = (NUMBER*)malloc(sizeof(NUMBER)*allocated);
+	dest.value_buf = (NUMBER*)malloc(sizeof(NUMBER)*(unsigned long)allocated);
 	std::copy(value_buf,value_buf+allocated,dest.value_buf);
 	dest.y = new int[l];
 	std::copy(y,y+l,dest.y);
@@ -221,7 +221,7 @@ void problem::Load(const char* filename,const NUMBER bias,const int maxdim)
 		exit(1);
 	}
 
-	max_line_len = 1024;
+	max_line_len = 102400;
 	line = Malloc(char,max_line_len);
 	l = 0;
 	allocated = 0;
@@ -314,8 +314,8 @@ void problem::GroupClasses(int** start_ret,int** count_ret,int* perm)
 {   // modified from group_classes() function in LIBLINEAR by Jianxin Wu
 	int max_nr_class = 16;
 	int nr_class = 0;
-	int *label = (int*)malloc(max_nr_class*sizeof(int));
-	int *count = (int*)malloc(max_nr_class*sizeof(int));
+	int *label = (int*)malloc((unsigned long)max_nr_class*sizeof(int));
+	int *count = (int*)malloc((unsigned long)max_nr_class*sizeof(int));
 	int *data_label = new int[l];
 	int i;
 
@@ -400,7 +400,7 @@ void problem::Train(model& model_,const NUMBER C,const NUMBER p)
 	
 	for(int i=0;i<3;i++) Xvalue2[i] = 0.5*pow(Xvalue[i],p);
 	const NUMBER invp = 1.0/p;
-	NUMBER* fvalues = new NUMBER[allocated*2]; assert(fvalues != NULL);
+	NUMBER* fvalues = new NUMBER[(unsigned long)allocated*2]; assert(fvalues != NULL);
 	// we assume for the small value xvalue[0]=0.01, any feature value will give the same kernel similarity 0.01
 	// this approximation sometimes increases accuracy, and saves memory (fvalues use only 2/3 memory) and time
 	if(p==-1)
@@ -450,7 +450,7 @@ void problem::Train(model& model_,const NUMBER C,const NUMBER p)
 	if(model_.w) delete[] model_.w;
 	if(num_class == 2)
 	{
-		model_.w = new NUMBER[n*3];
+		model_.w = new NUMBER[(unsigned long)n*3];
 		int e0 = start[0]+count[0];
 		int k=0;
 		for(; k<e0; k++) sub_prob.y[k] = +1;
@@ -459,13 +459,13 @@ void problem::Train(model& model_,const NUMBER C,const NUMBER p)
 	}
 	else
 	{
-		model_.w = new NUMBER[n*num_class*3];
-		NUMBER* w = new NUMBER[n*3];
+		model_.w = new NUMBER[(unsigned long)n*num_class*3];
+		NUMBER* w = new NUMBER[(unsigned long)n*3];
 		for(int i=0;i<num_class;i++)
 		{
 			int si = start[i];
 			int ei = si+count[i];
-			int k=0;
+			unsigned long k=0;
 			for(; k<si; k++) sub_prob.y[k] = -1;
 			for(; k<ei; k++) sub_prob.y[k] = +1;
 			for(; k<sub_prob.l; k++) sub_prob.y[k] = -1;
@@ -675,9 +675,9 @@ void problem::Solve_l2r_l1l2_svc(NUMBER* w,NUMBER C,const NUMBER p,const int sol
 
 int model::PredictValues(const int* ix,const NUMBER* vx,NUMBER *dec_values)
 {
-	int n = nr_feature;
-	int i;
-	int nr_w;
+	unsigned long n = nr_feature;
+	unsigned long i;
+	unsigned long nr_w;
 	if(nr_class==2)
 		nr_w = 1;
 	else
@@ -727,7 +727,7 @@ NUMBER problem::CrossValidation(const int nr_fold, const NUMBER C,const NUMBER p
 {
 	int max_nr_class = 16;
 	int nr_class = 0;
-	int *label = (int*)malloc(max_nr_class*sizeof(int));
+	int *label = (int*)malloc((unsigned long)max_nr_class*sizeof(int));
 
 	for(int i=0;i<l;i++)
 	{
@@ -842,9 +842,9 @@ int main(int argc, char **argv)
 		probtrain.Clear();
 		
 		probtest.Load(argv[2],1,model_.nr_feature);
-		int* pd = new int[probtest.GetNumExamples()];
-		int* gt = new int[probtest.GetNumExamples()];
-		NUMBER* table = new NUMBER[probtest.GetNumExamples()*model_.nr_class];
+		int* pd = new int[(unsigned long)probtest.GetNumExamples()];
+		int* gt = new int[(unsigned long)probtest.GetNumExamples()];
+		NUMBER* table = new NUMBER[(unsigned long)probtest.GetNumExamples()*model_.nr_class];
 
 		timeb TimingMilliSeconds;
 		ftime(&TimingMilliSeconds);
