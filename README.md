@@ -62,7 +62,7 @@ The `classification` directory contains code related to the classifiers used to 
 * `PmSVM`: Power Mean SVM classifier written by Jianxin Wu, originally available in https://sites.google.com/site/wujx2001/home/power-mean-svm. The original code was modified to deal with large data.
 * `fest`: FEST software written by Nikos Karampatziakis that provides Random Forest classifiers. Available in http://lowrank.net/nikos/fest/ and included here for convenience.
 * `feature_vectors_generator.py`: Code to read n-grams data and to output feature vectors in libsvm format.
-  * Example of invocation: 
+  * Example of use: `./feature_vectors_generator.py --source-dir-data my_input_dir --output-dir my_output_dir --minimal-number-tweets 1000 --validation-folding 10 --repetitions 10 --number-authors 50 --number-tweets 50 --features all --debug` 
 * `pmsvm_classifier.py`:
 * `pmsvm_classifier_no_cross.py`:
 * `pmsvm_pca_classifier.py`:
