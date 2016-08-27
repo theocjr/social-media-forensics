@@ -88,13 +88,17 @@ y is calculated.
 
 #### Experiment Scripts
 
+The `experiment_scripts` directory contains lots of shell scripts used to run the experiments and serves as an invocation example of the above code.
+
+
+#### Char-grams Analysis
+
+The `char-grams_analysis` directory has some of the code described above with modifications to deal with different values of char n-grams in order to perform an efficiency analysis.
+
 
 #### Utils
 
 The `utils` directory contains a single script called `install_libraries.sh` aimed to install all the dependencies on a fresh new Ubuntu Server LTS 64 14.04 (Trusty Tahr).
-
-
-#### Misc
 
 
 ## Contributing
