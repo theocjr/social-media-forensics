@@ -10,7 +10,16 @@ TODO
 
 ## Installation
 
-TODO: Describe the installation process
+To run this code some required libraries have to be installed:
+
+* numpy
+* scipy
+* nltk
+* scikit-learn
+
+A script called `install_libraries.sh` in `utils` directory is able to automatically perform this install in a fresh new Ubuntu Server LTS 64 14.04 (Trusty Tahr).
+
+Besides this, the FEST code included in this bundled needs to be compiled if the Random Forest classifier based on it is supposed to be run (see details in [Classification Subsection](#classification)).
 
 
 ## Usage
@@ -26,6 +35,7 @@ The code is organized into these three directories:
 * `classification`: code to learn a model and run a classifier.
 * `experiment_scripts`: examples of scripts to run the code in the above directories.
 * `char-grams_analysis`: code and scripts related to analysis of different char-grams.
+* `utils`: utility code like scripts for installing required libraries.
 
 Each Python program has a `-h/--help` command-line option that presents an usage explanation describing each option meaning.
 
@@ -80,6 +90,8 @@ y is calculated.
 
 
 #### Utils
+
+The `utils` directory contains a single script called `install_libraries.sh` aimed to install all the dependencies on a fresh new Ubuntu Server LTS 64 14.04 (Trusty Tahr).
 
 
 #### Misc
