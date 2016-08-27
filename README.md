@@ -5,7 +5,7 @@ This project aims to make available tools and software for forensics over social
 
 ## Datasets
 
-TODO
+The datasets used are available under request. If interested please send a message to Prof. Dr. Anderson Rocha (anderson.rocha@ic.unicamp.br).
 
 
 ## Installation
@@ -110,16 +110,9 @@ The `utils` directory contains a single script called `install_libraries.sh` aim
 5. Submit a pull request :D
 
 
-## History
-
-TODO: Write history
-
-
-## Credits
-
-TODO: Write credits
-
-
 ## License
 
 TODO: Write license
+
+
+Please, feel free to send any comments or suggestions for updates in these instructions.
