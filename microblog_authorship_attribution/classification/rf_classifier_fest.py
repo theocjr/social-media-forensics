@@ -2,7 +2,7 @@
 
 
 """
-Program to trigger a Random Forest classifier based on FEST code. Its input are the feature vectors output by feature_vectors_generator.py code.
+Program to trigger a Random Forest classifier based on FEST code. Its input are the feature vectors output by feature_vectors_generator.py code. The FEST code doesn't perform a multi-class classification (only binary) so a model for each author is learned.
 
 Logic in pseudo-code
     1 - For each run (directory named run_XXX in input directory)
