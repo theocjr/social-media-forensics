@@ -63,7 +63,8 @@ The `classification` directory contains code related to the classifiers used to 
 * `fest`: FEST software written by Nikos Karampatziakis that provides Random Forest classifiers. Available in http://lowrank.net/nikos/fest/ and included here for convenience.
 * `feature_vectors_generator.py`: Code to read n-grams data and to output feature vectors in libsvm format.
   * Example of use: `./feature_vectors_generator.py --source-dir-data my_input_dir --output-dir my_output_dir --minimal-number-tweets 1000 --validation-folding 10 --repetitions 10 --number-authors 50 --number-tweets 50 --features all --debug` 
-* `pmsvm_classifier.py`:
+* `pmsvm_classifier.py`: Program to trigger a Power Mean SVM classifier. Its input are the feature vectors output by `feature_vectors_generator.py` code.
+  * Example of use: `./pmsvm_classifier.py --source-dir-data my_input_dir --output-dir my_output_dir --minimal-number-tweets 1000 --validation-folding 10 --repetitions 10 --number-authors 50 --number-tweets 500 --features all --debug`
 * `pmsvm_classifier_no_cross.py`:
 * `pmsvm_pca_classifier.py`:
 * `rf_classifier.py`: Program to trigger a Random Forest (RF) classifier based on scikit-learn code. Its input are the feature vectors output by `feature_vectors_generator.py` code. Besides doing the classification, it also calculates the importance of each feature used.
