@@ -5,7 +5,7 @@ This project aims to make available tools and software for forensics over social
 
 ## Datasets
 
-The datasets used are available under request. If interested please send a message to Prof. Dr. Anderson Rocha (anderson.rocha@ic.unicamp.br).
+The datasets used are available under request. If you are interested, please send a message to Prof. Dr. Anderson Rocha (anderson.rocha@ic.unicamp.br).
 
 
 ## Installation
@@ -19,7 +19,7 @@ To run this code some required libraries have to be installed:
 
 A script called `install_libraries.sh` in `utils` directory is able to automatically perform this install in a fresh new Ubuntu Server LTS 64 14.04 (Trusty Tahr).
 
-Besides this, the FEST code included in this bundled needs to be compiled if the Random Forest classifier based on it is supposed to be run (see details in [Classification Subsection](#classification)).
+Besides these, the FEST code included in this bundle needs to be compiled if the Random Forest classifier based on it is supposed to be run (see details in [Classification Subsection](#classification)).
 
 
 ## Usage
