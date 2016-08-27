@@ -57,7 +57,7 @@ Below is a list of each file/directory with a brief explanation and example of i
 
 #### Classification
 
-The `classification` directory contains code related to the classifiers used to learn a model for the authors in the dataset. They expect that the dataset was previously pre-processed by the code in the `dataset_pre_processing` directory (at least `ngrams_generator.py` code) so that their input be the messages n-grams. Below are a list of the files/directories with brief explanations and examples of usage when applicable:
+The `classification` directory contains code related to the classifiers used to learn a model for the authors in the dataset. They expect that the dataset was previously pre-processed by the code in the `dataset_pre_processing` directory (at least `ngrams_generator.py` code) so that their input be the messages n-grams. Below are a list of the files/directories with brief explanations and examples of usage when applicable (most of command-line options have default values):
 
 * `PmSVM`: Power Mean SVM classifier written by Jianxin Wu, originally available in https://sites.google.com/site/wujx2001/home/power-mean-svm. The original code was modified to deal with large data.
 * `fest`: FEST software written by Nikos Karampatziakis that provides Random Forest classifiers. Available in http://lowrank.net/nikos/fest/ and included here for convenience.
@@ -66,7 +66,8 @@ The `classification` directory contains code related to the classifiers used to 
 * `pmsvm_classifier.py`:
 * `pmsvm_classifier_no_cross.py`:
 * `pmsvm_pca_classifier.py`:
-* `rf_classifier.py`:
+* `rf_classifier.py`: Program to trigger a Random Forest (RF) classifier based on scikit-learn code. Its input are the feature vectors output by feature_vectors_generator.py code. Besides doing the classification, it also calculates the importance of each feature used.
+  * Example of use: `./rf_classifier.py --source-dir-data my_input_dir --output-dir my_output_dir --minimal-number-tweets 1000 --validation-folding 10 --repetitions 10 --number-authors 50 --number-tweets 500 --features all --number-trees 500 --number-most-important-features 100 --debug`
 * `rf_classifier_fest.py`: Program to trigger a Random Forest classifier based on FEST code. Its input are the feature vectors output by `feature_vectors_generator.py` code. FEST code needs to be compiled as indicated in http://lowrank.net/nikos/fest/ before `rf_classifier_fest.py` invocation.
   * Example of use: `./rf_classifier_fest.py --source-dir-data my_input_dir --output-dir my_output_dir --number-trees 500 -debug`
 
