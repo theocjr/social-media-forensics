@@ -41,14 +41,14 @@ More clarification can be obtained inspecting [messages_persistence.py](./microb
 
 ## Installation
 
-Besides Python (tested under version 2.7.12), to run this code some required libraries have to be installed:
+Besides the Python interpreter (tested under version 2.7.12), to run this code some required libraries have to be installed:
 
 * numpy
 * scipy
 * nltk
 * scikit-learn
 
-A script called `install_libraries.sh` in `utils` directory is able to automatically perform this install in a fresh new Ubuntu Server LTS 64 14.04 (Trusty Tahr).
+A script called [`install_libraries.sh`](./microblog_authorship_attribution/utils/install_libraries.sh) in `utils` directory is able to automatically perform this install in a fresh new Ubuntu Server LTS 64 14.04 (Trusty Tahr).
 
 Besides these, the FEST code included in this bundle needs to be compiled if the Random Forest classifier based on it is supposed to be run (see details in [Classification Subsection](#classification)).
 
