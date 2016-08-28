@@ -2,7 +2,7 @@
 
 
 """
-Program to trigger a Power Mean SVM classifier. Its input are the feature vectors output by feature_vectors_generator.py code.
+Program to trigger a Power Mean SVM classifier. Its input are the n-grams output by ngrams_generator.py code.
 
 This code is intended to be used in experiments with small datasets (less than 10 messages per author) so instead of a k-fold cross validation, a validation based on sampling is performed. First a test set is sampled and after several runs are conducted, each one with a different training set built by sampling. At the end a mean accuracy is calculated.
     

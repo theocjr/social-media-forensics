@@ -2,7 +2,7 @@
 
 
 """
-Program to trigger a Power Mean SVM classifier. Its input are the feature vectors output by feature_vectors_generator.py code.
+Program to trigger a Power Mean SVM classifier. Its input are the n-grams output by ngrams_generator.py code.
     
 Logic in pseudo-code
     1 - Filter out author with few tweets (through the prefix at filename)

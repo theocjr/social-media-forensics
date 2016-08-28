@@ -2,7 +2,7 @@
 
 
 """
-Program to trigger a Power Mean SVM (PmSVM) classifier. Its input are the feature vectors output by feature_vectors_generator.py code. Before performing the PmSVM classification, a PCA decomposition is performed in order to reduce the dimensionality.
+Program to trigger a Power Mean SVM (PmSVM) classifier. Its input are the n-grams output by ngrams_generator.py code. Before performing the PmSVM classification, a PCA decomposition is conducted in order to reduce the dimensionality.
 
 Logic in pseudo-code
     1 - Filter out author with few tweets (through the prefix at filename)

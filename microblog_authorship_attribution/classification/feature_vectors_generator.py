@@ -2,7 +2,7 @@
 
 
 """
-Code to read ngrams data and to output feature vectors in libsvm format.
+Code to read ngrams data and to output feature vectors in libsvm format. Its input are the n-grams output by ngrams_generator.py code. This code is used to prepare the data for the rf_classifier_fest.py code.
 
 Logic in pseudo-code
     1 - Filter out author with few tweets (through the prefix at filename)

@@ -2,7 +2,7 @@
 
 
 """
-Program to trigger a Random Forest (RF) classifier based on scikit-learn code. Its input are the feature vectors output by feature_vectors_generator.py code. Besides doing the classification, it also calculates the importance of each feature used.
+Program to trigger a Random Forest (RF) classifier based on scikit-learn code. Its input are the n-grams output by ngrams_generator.py code. Besides doing the classification, it also calculates the importance of each feature used.
 
 The feature importance rational is: for each RF model, the 100 most important discriminative n-grams are chosen. They are accounted by their rank in the importance order (the bigger the better). For each n-gram, it is mapped to its feature type (char-4-gram, word-1-gram, ...) and a counter for each feature type is incremented with its rank. At the end a normalization is done and each feature has a number between 0 and 1 representing its relative importance.
 
