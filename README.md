@@ -1,6 +1,6 @@
 # Social Media Forensics
 
-This project aims to make available tools and software for forensics over social media.
+This project aims to make available tools and software for forensics over social media in order to promote information exchange and foster the area.
 
 
 ## Datasets
