@@ -62,7 +62,7 @@ Code related to tackle the problem of authorship attribution over micro blog soc
 
 The code is organized into these three directories:
 
-* `dataset_pre_processing`: code that pre-processes the data before to trigger the model learning. Examples of pre-processing are language filtering, data tagging and n-grams generation.
+* `dataset_pre_processing`: code that pre-processes the data before triggering the model learning. Examples of pre-processing are language filtering, data tagging and n-grams generation.
 * `classification`: code to learn a model and run a classifier.
 * `experiment_scripts`: examples of scripts to run the code in the above directories.
 * `char-grams_analysis`: code and scripts related to analysis of different char-grams.
