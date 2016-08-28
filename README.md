@@ -100,7 +100,7 @@ Below is a list of each file/directory with a brief explanation and example of i
 
 The `classification` directory contains code related to the classifiers used to learn a model for the authors in the dataset. They expect that the dataset was previously pre-processed by the code in the `dataset_pre_processing` directory (at least `ngrams_generator.py` code) so that their input be the messages n-grams. Below is a list of the files/directories with brief explanations and examples of usage when applicable (most of command-line options have default values):
 
-* `PmSVM`: Power Mean SVM classifier written by Jianxin Wu, originally available in https://sites.google.com/site/wujx2001/home/power-mean-svm. The original code was modified to deal with large data.
+* `PmSVM`: Power Mean SVM classifier written by Jianxin Wu, originally available in https://sites.google.com/site/wujx2001/home/power-mean-svm. The original code was modified to deal with large data. The version history in this project can be used to see these modifications.
 * `fest`: FEST software written by Nikos Karampatziakis that provides Random Forest classifiers. Available in http://lowrank.net/nikos/fest/ and included here for convenience.
 * `pmsvm_classifier.py`: Program to trigger a Power Mean SVM classifier. Its input are the n-grams output by `ngrams_generator.py` code.
   * Example of use: `./pmsvm_classifier.py --source-dir-data my_input_dir --output-dir my_output_dir --minimal-number-tweets 1000 --validation-folding 10 --repetitions 10 --number-authors 50 --number-tweets 500 --features all --debug`
