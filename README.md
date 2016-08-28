@@ -7,7 +7,7 @@ This project aims to make available tools and software for forensics over social
 
 The datasets used are available under request. If you are interested, please send a message to Prof. Dr. Anderson Rocha (anderson.rocha@ic.unicamp.br).
 
-If you want to use your own dataset of messages, the code expect the following premises:
+If you want to use your own dataset of messages, the code expects the following premises:
 
 1. The messages of an author must be on a separated file (UTF-8 encoded) named by its Twitter's id number;
 2. Each message has the following format:
@@ -18,6 +18,30 @@ If you want to use your own dataset of messages, the code expect the following p
 #POS [POS Tag data] #POS
 }
 ```
+
+For example:
+
+```
+my_nickname 2016-08-28 20:21:22 091294878667731268 {
+tell me
+
+https://t.co/cerkmoecem
+#POS V O
+
+U #POS
+}
+my_nickname 2016-03-28 20:52:53 091294878667731987 {
+@Friend Im gonna bring beans
+#POS I L V V#POS
+}
+```
+
+More clarification can be obtained inspecting [messages_persistence.py](https://github.com/theocjr/social-media-forensics/blob/master/microblog_authorship_attribution/dataset_pre_processing/messages_persistence.py) file.
+
+
+
+
+
 
 ## Installation
 
