@@ -68,7 +68,7 @@ The code is organized into these three directories:
 * `char-grams_analysis`: code and scripts related to analysis of different values for character grams.
 * `utils`: utility code like scripts for installing required libraries.
 
-Each Python program has a `-h/--help` command-line option that presents an usage explanation describing each option meaning.
+Each Python program has a `-h/--help` command-line option that presents an usage explanation describing each option meaning. Most of these option have default values.
 
 
 #### Dataset Pre-Processing
