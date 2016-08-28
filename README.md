@@ -22,7 +22,7 @@ If you want to use your own dataset of messages, the code expects the following 
 For example:
 
 ```
-my_nickname 2016-08-28 20:21:22 091294878667731268 {
+author_nickname 2016-08-28 20:21:22 091294878667731268 {
 tell me
 
 https://t.co/cerkmoecem
@@ -30,7 +30,7 @@ https://t.co/cerkmoecem
 
 U #POS
 }
-my_nickname 2016-03-28 20:52:53 091294878667731987 {
+author_nickname 2016-03-28 20:52:53 091294878667731987 {
 @Friend Im gonna bring beans
 #POS I L V V#POS
 }
