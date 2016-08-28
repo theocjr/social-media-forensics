@@ -36,11 +36,7 @@ my_nickname 2016-03-28 20:52:53 091294878667731987 {
 }
 ```
 
-More clarification can be obtained inspecting [messages_persistence.py](https://github.com/theocjr/social-media-forensics/blob/master/microblog_authorship_attribution/dataset_pre_processing/messages_persistence.py) file.
-
-
-
-
+More clarification can be obtained inspecting [messages_persistence.py](./microblog_authorship_attribution/dataset_pre_processing/messages_persistence.py) file.
 
 
 ## Installation
