@@ -98,7 +98,7 @@ Below is a list of each file/directory with a brief explanation and example of i
 
 #### Classification
 
-The `classification` directory contains code related to the classifiers used to learn a model for the authors in the dataset. They expect that the dataset was previously pre-processed by the code in the `dataset_pre_processing` directory (at least `ngrams_generator.py` code) so that their input be the messages n-grams. Below are a list of the files/directories with brief explanations and examples of usage when applicable (most of command-line options have default values):
+The `classification` directory contains code related to the classifiers used to learn a model for the authors in the dataset. They expect that the dataset was previously pre-processed by the code in the `dataset_pre_processing` directory (at least `ngrams_generator.py` code) so that their input be the messages n-grams. Below is a list of the files/directories with brief explanations and examples of usage when applicable (most of command-line options have default values):
 
 * `PmSVM`: Power Mean SVM classifier written by Jianxin Wu, originally available in https://sites.google.com/site/wujx2001/home/power-mean-svm. The original code was modified to deal with large data.
 * `fest`: FEST software written by Nikos Karampatziakis that provides Random Forest classifiers. Available in http://lowrank.net/nikos/fest/ and included here for convenience.
