@@ -123,7 +123,7 @@ The `experiment_scripts` directory contains lots of shell scripts used to run th
 
 #### Char-grams Analysis
 
-The `char-grams_analysis` directory has some of the code described above with modifications to deal with different values of char grams in order to perform an efficiency analysis.
+The `char-grams_analysis` directory has some of the code described above with modifications to deal with different values of character grams in order to perform an efficiency analysis.
 
 
 #### Utils
