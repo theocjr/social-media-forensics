@@ -118,7 +118,7 @@ The `classification` directory contains code related to the classifiers used to 
 
 #### Experiment Scripts
 
-The `experiment_scripts` directory contains lots of shell scripts used to run the experiments and serves as an invocation example of the above code.
+The `experiment_scripts` directory contains lots of shell scripts used to run the experiments and serves as a container of invocation examples of the above code.
 
 
 #### Char-grams Analysis
