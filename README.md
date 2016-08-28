@@ -7,6 +7,15 @@ This project aims to make available tools and software for forensics over social
 
 The datasets used are available under request. If you are interested, please send a message to Prof. Dr. Anderson Rocha (anderson.rocha@ic.unicamp.br).
 
+If you want to use your own dataset of messages, the code expect the following premises:
+
+1. The messages of an author must be on a separated file (UTF-8 encoded) named by its Twitter's id number;
+2. Each message has the following format:
+<Twitter user name> <timestamp> <Tweet id> {
+<Tweet message (multi-line allowed)>
+#POS <POS Tag data> #POS
+}
+
 
 ## Installation
 
