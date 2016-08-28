@@ -10,11 +10,6 @@ function notify_error {
 trap notify_error ERR
 
 
-apt-get update
-apt-get --yes upgrade
-
-apt-get --yes install sudo
-
 apt-get --yes install vim
 apt-get --yes install man
 apt-get --yes install htop
