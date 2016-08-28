@@ -2,6 +2,7 @@
 
 
 """
+Apart from the inclusion of new values for char grams, this code is very similar to the one in ../dataset_pre_processing directory with the difference that, in order to compare the features with the same dataset, the sampling of authors/tweets is done once in this code and not in pmsvm_classifier_char-grams.py.
 """
 
 

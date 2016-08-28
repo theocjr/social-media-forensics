@@ -2,21 +2,7 @@
 
 
 """
-Logic in pseudo-code
-    1 - Filter out author with few tweets (through the prefix at filename)
-    2 - For each run
-        2.1 - Sample the authors
-        2.2 - For each sampled author
-            2.2.1 - Read and sample the tweets ngrams
-        2.3 - Fold the sampled dataset (list of histograms)
-        2.4 - For each fold
-            2.4.1 - Remove 'hapax legomena' from the training set
-            2.4.2 - Fit the vectorizer based on training set
-            2.4.3 - Define training/test feature vectors through the vectorizer learned
-            2.4.4 - Train and run the classifier
-            2.4.5 - Register accuracy for this fold
-        2.5 - Calculate accuracy for this run
-    3 - Calculate accuracy for this experiment
+Apart from the inclusion of new values for char grams, this code is very similar to the one in ../classification directory with the difference that, in order to compare the features with the same dataset, the sampling of authors/tweets is done once in the ngrams_generator_char-grams.py code and not in this code.
 """
 
 
