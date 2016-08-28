@@ -3,7 +3,7 @@
 
 """
 Code for generating ngrams for the messages presented in the dataset.
-The output are files in Python’s built-in persistence model format implemented
+The output are files in Python's built-in persistence model format implemented
     by sklearn, one file for each feature of each author (char-4-gram, 
     word-1-gram, word-2-gram, ...) to be fed to the classifiers.
 """
