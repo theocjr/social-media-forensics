@@ -107,7 +107,7 @@ The `classification` directory contains code related to the classifiers used to 
 * `pmsvm_classifier_no_cross.py`: Program to trigger a Power Mean SVM classifier. Its input are the n-grams output by `ngrams_generator.py` code. This code is intended to be used in experiments with small datasets (less than 10 messages per author) so instead of a k-fold cross validation, a validation based on sampling is performed. First a test set is sampled and after several runs are conducted, each one with a different training set built by sampling. At the end a mean accurac
 y is calculated.
   * Example of use: `./pmsvm_classifier_no_cross.py --source-dir-data my_input_dir --output-dir my_output_dir --minimal-number-tweets 1000 --number-authors 50 --number-tweets 500 --features all --debug`
-* `pmsvm_pca_classifier.py`: Program to trigger a Power Mean SVM (PmSVM) classifier. Its input are the n-grams output by `ngrams_generator.py` code. Before performing the PmSVM classification, a PCA decomposition is performed in order to reduce the dimensionality.
+* `pmsvm_pca_classifier.py`: Program to trigger a Power Mean SVM (PmSVM) classifier. Its input are the n-grams output by `ngrams_generator.py` code. Before performing the PmSVM classification, a PCA decomposition is conducted in order to reduce the dimensionality.
  * Example of use: `./pmsvm_pca_classifier.py --source-dir-data my_input_dir --output-dir my_output_dir --minimal-number-tweets 1000 --validation-folding 10 --repetitions 10 --number-authors 50 --number-tweets 500 --features all --pca-variance 0.9 --debug`
 * `rf_classifier.py`: Program to trigger a Random Forest (RF) classifier based on scikit-learn code. Its input are the n-grams output by `ngrams_generator.py` code. Besides doing the classification, it also calculates the importance of each feature used.
   * Example of use: `./rf_classifier.py --source-dir-data my_input_dir --output-dir my_output_dir --minimal-number-tweets 1000 --validation-folding 10 --repetitions 10 --number-authors 50 --number-tweets 500 --features all --number-trees 500 --number-most-important-features 100 --debug`
@@ -124,7 +124,7 @@ The `experiment_scripts` directory contains lots of shell scripts used to run th
 
 #### Char-grams Analysis
 
-The `char-grams_analysis` directory has some of the code described above with modifications to deal with different values of char n-grams in order to perform an efficiency analysis.
+The `char-grams_analysis` directory has some of the code described above with modifications to deal with different values of char grams in order to perform an efficiency analysis.
 
 
 #### Utils
