@@ -112,7 +112,7 @@ The `utils` directory contains a single script called `install_libraries.sh` aim
 
 ## License
 
-TODO: Write license
+The software in this project is distributed under [BSD License](http://www.linfo.org/bsdlicense.html).
 
 
 Please, feel free to send any comments or suggestions for updates in these instructions.
