@@ -65,7 +65,7 @@ The code is organized into these three directories:
 * `dataset_pre_processing`: code that pre-processes the data before triggering the model learning. Examples of pre-processing are language filtering, data tagging and n-grams generation.
 * `classification`: code to learn a model and run a classifier.
 * `experiment_scripts`: examples of scripts to run the code in the above directories.
-* `char-grams_analysis`: code and scripts related to analysis of different char-grams.
+* `char-grams_analysis`: code and scripts related to analysis of different values for character grams.
 * `utils`: utility code like scripts for installing required libraries.
 
 Each Python program has a `-h/--help` command-line option that presents an usage explanation describing each option meaning.
