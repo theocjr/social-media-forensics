@@ -58,7 +58,7 @@ Besides these, the FEST code included in this bundle needs to be compiled if the
 
 ### Microblog Authorship Attribution
 
-Code related to tackle the problem of authorship attribution over micro blog social media like Twitter.
+Code related to tackle the problem of authorship attribution over micro blog social media like Twitter. The tag [`v1.0-tifs_2016`](TODO) is the code used to perform the experiments described in the paper "Authorship Attribution for Social Media Forensics" to be published on IEEE Transactions on Information Forensics and Security. If you find this work relevant to your job please cite the paper.
 
 The code is organized into these three directories:
 
