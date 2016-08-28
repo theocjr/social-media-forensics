@@ -11,12 +11,13 @@ If you want to use your own dataset of messages, the code expect the following p
 
 1. The messages of an author must be on a separated file (UTF-8 encoded) named by its Twitter's id number;
 2. Each message has the following format:
-`
+
+```
 [Twitter user name] [timestamp] [Tweet id] {
 [Tweet message (multi-line allowed)]
 #POS [POS Tag data] #POS
 }
-`
+```
 
 ## Installation
 
