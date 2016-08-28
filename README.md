@@ -9,7 +9,7 @@ The datasets used are available under request. If you are interested, please sen
 
 If you want to use your own dataset of messages, the code expects the following premises:
 
-1. The messages of an author must be on a separated file (UTF-8 encoded) named by its Twitter's id number;
+1. The messages of an author must be on a separated file (UTF-8 encoded) named by its Twitter's id number followed by the extension `.dat`. Example: `1111126194.dat`;
 2. Each message has the following format:
 
 ```
