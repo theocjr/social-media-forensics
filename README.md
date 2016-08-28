@@ -86,9 +86,9 @@ Below is a list of each file/directory with a brief explanation and example of i
 
 * `messages_persistence.py`: Auxiliary code for manipulating (read and write) Twitter messages in dataset files.
 * `guess-language-0.2`: Language detection API available in https://pypi.python.org/pypi/guess-language included in the project for convenience.
-* `filter_retweets_few_words.py`: Code for reading authors' tweets filenames and remove retweets and tweets with few words.
+* `filter_retweets_few_words.py`: Code for reading authors' tweets files and remove retweets and tweets with few words.
   * Example of use: `./filter_retweets_few_words.py  --source-dir-data my_input_dir --dest-dir my_output_dir --filter-retweets --minimal-number-words 3 --debug`
-* `filter_language_by_tweet.py`: Code for reading authors' tweets filenames and filter the messages based on an API of language detection.
+* `filter_language_by_tweet.py`: Code for reading authors' tweets files and filter the messages based on an API of language detection.
   * Example of use: `./filter_language_by_tweet.py --source-dir my_input_dir --dest-dir my_output_dir --language-detection-module ./guess-language-0.2/guess_language/ --language English --debug`
 * `tagging_irrelevant_data.py`: Code for tagging irrelevant data as numbers, dates, times, URLs, hashtags and user references. There are command-line options to individually suppress the tagging of each data type.
   * Example of use: `./tagging_irrelevant_data.py --source-dir my_input_dir --dest-dir my_output_dir --debug`
