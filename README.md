@@ -9,7 +9,7 @@ The datasets used are available under request. If you are interested, please sen
 
 If you want to use your own dataset of messages, the code expects the following premises:
 
-1. The messages of an author must be on a separated file (UTF-8 encoded) named by its Twitter's id number followed by the extension `.dat`. Example: `1111126194.dat`;
+1. The messages of an author must be on a separated file (UTF-8 encoded) named by its Twitter's id number followed by the extension `.dat`. Example: `1111111111.dat`;
 2. Each message has the following format:
 
 ```
@@ -36,7 +36,7 @@ author_nickname 2016-03-28 20:52:53 091294878667731987 {
 }
 ```
 
-More clarification can be obtained inspecting [messages_persistence.py](./microblog_authorship_attribution/dataset_pre_processing/messages_persistence.py) file.
+More clarification can be obtained inspecting [messages_persistence.py](./microblog_authorship_attribution/dataset_pre_processing/messages_persistence.py) file. If you don't plan to use the POS Tag features you can let the `[POS Tag data]` field empty.
 
 
 ## Installation
