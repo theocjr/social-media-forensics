@@ -18,7 +18,7 @@ Logic in pseudo-code
      2 - Account final accuracy
 
 
-Obs. Premise: the samples of each author in the training set are grouped together
+Obs. Premise: the samples of each author in the training set are grouped together.
 """
 
 
