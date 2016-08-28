@@ -92,7 +92,7 @@ Below is a list of each file/directory with a brief explanation and example of i
   * Example of use: `./filter_language_by_tweet.py --source-dir my_input_dir --dest-dir my_output_dir --language-detection-module ./guess-language-0.2/guess_language/ --language English --debug`
 * `tagging_irrelevant_data.py`: Code for tagging irrelevant data as numbers, dates, times, URLs, hashtags and user references. There are command-line options to individually suppress the tagging of each data type.
   * Example of use: `./tagging_irrelevant_data.py --source-dir my_input_dir --dest-dir my_output_dir --debug`
-* `ngrams_generator.py`: Code for generating ngrams. The input are the messages presented in the dataset and the output are files in Python’s built-in persistence model format implemented by `sklearn`, one file for each feature of each author (char-4-gram, word-1-gram, word-2-gram, ...) to be fed to the classifiers. This is the only code needed to be run before any classifier in the `classification` directory.
+* `ngrams_generator.py`: Code for generating n'grams. The input are the messages presented in the dataset and the output are files in Python's built-in persistence model format implemented by `sklearn`, one file for each feature of each author (char-4-gram, word-1-gram, word-2-gram, ...) to be fed to the classifiers. This is the only code needed to be run before any classifier in the `classification` directory.
   * Example of use: `./ngrams_generator.py --source-dir my_input_dir --dest-dir my_output_dir --features all --debug`
 
 
