@@ -36,7 +36,7 @@ author_nickname 2016-03-28 20:52:53 091294878667731987 {
 }
 ```
 
-More clarification can be obtained inspecting [messages_persistence.py](./microblog_authorship_attribution/dataset_pre_processing/messages_persistence.py) file. If you don't plan to use the POS Tag features you can let the `[POS Tag data]` field empty.
+More clarification can be obtained inspecting [`messages_persistence.py`](./microblog_authorship_attribution/dataset_pre_processing/messages_persistence.py) file. If you don't plan to use the POS Tag features you can let the `[POS Tag data]` field empty.
 
 
 ## Installation
