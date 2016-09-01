@@ -17,6 +17,7 @@ import sys
 import os
 import glob
 import messages_persistence
+import traceback
 
 
 def command_line_parsing():
@@ -71,8 +72,8 @@ if __name__ == '__main__':
 
     logging.info('Filtering tweets by language ...')
     author_filenames = glob.glob(''.join([args.source_dir_data, os.sep, '*.dat']))
-    num_files = len(author_filenames)
-    i = 0
+    num_files = len(author_filenames)   # processing feedback
+    i = 0                               # processing feedback
     for author_filename in author_filenames:
         sys.stdout.write(''.join(['\t', str(i), '/', str(num_files), ' files processed\r']))
         i += 1
@@ -81,7 +82,14 @@ if __name__ == '__main__':
         messages_filtered = []
         for message in messages:
             logging.debug(''.join(['Detecting language for tweet: ', message['tweet']]))
-            detected_language = guess_language.guessLanguageName(message['tweet'])
+            try:        # code guess-language breaks for some tweets
+                detected_language = guess_language.guessLanguageName(message['tweet'])
+            except Exception as e:
+                logging.warning('guess-language library error in detecting language for tweet: ' + message['tweet'])
+                logging.warning('Exception message: ' + str(e))
+                logging.warning('Exception stack trace:')
+                traceback.print_tb(sys.exc_info()[2])
+                detected_language = None
             if detected_language:
                 logging.debug(''.join(['\tLanguage \'', detected_language, '\' detected.']))
                 if detected_language == args.language:
