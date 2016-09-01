@@ -155,7 +155,7 @@ def ngrams_generator(tweets, features, save_dir):
                     grams = ngrams(tweet, i)
                 gram_list.append(add_postag_id(grams_histogram(grams)))         # add an element in the pos-tag gram identifier to not mix up these grams with other char/word grams
             if char_word_len and char_word_len != len(gram_list):
-                logging.error(''.join(['Tweet messages and POS Tags with different sizes: ', str(char_word_len), ' and ', str(len(gram_list)), ' respectively. Quiting ...']))
+                logging.error(''.join(['Tweet messages and POS Tags with different sizes for author ', os.path.basename(save_dir), ': ', str(char_word_len), ' and ', str(len(gram_list)), ' respectively. Quitting ...']))
                 sys.exit(1)
             logging.debug('\tRemoving \'hapax legomena\' ...')
             remove_hapax_legomena(gram_list)
@@ -184,8 +184,13 @@ if  __name__ == '__main__':
         sys.exit(1)
     os.makedirs(args.dest_dir)
 
+    author_dirnames = glob.glob(os.sep.join([args.source_dir_data, '*.dat']))
+    num_files = len(author_dirnames)    # processing feedback
+    i = 0                               # processing feedback
     logging.info('Reading dataset and generating n-grams ...')
-    for filename in glob.glob(os.sep.join([args.source_dir_data, '*.dat'])):
+    for filename in author_dirnames:
+        sys.stderr.write(''.join(['\t', str(i), '/', str(num_files), ' files processed\r']))   # processing feedback
+        i += 1
         logging.debug(''.join(['Reading tweets and generating n-grams for file ', filename, ' ...']))
         author_dir = os.sep.join([args.dest_dir, os.path.splitext(os.path.basename(filename))[0]])
         os.makedirs(author_dir)
