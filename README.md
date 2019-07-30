@@ -5,7 +5,9 @@ This project aims to make available tools and software for forensics over social
 
 ## Datasets
 
-The datasets used are available under request. If you are interested, please send a message to Prof. Dr. Anderson Rocha (anderson.rocha@ic.unicamp.br).
+The dataset used in our paper [_A Needle in a Haystack? Harnessing Onomatopoeia and User-specific Stylometrics for Authorship Attribution of Micro-messages_](https://ieeexplore.ieee.org/abstract/document/868) published at [_2019 IEEE International Conference on Acoustics, Speech and Signal Processing - ICASSP_](https://2019.ieeeicassp.org/) can be downloaded [here](https://www.dropbox.com/s/ms2j29px53j7934/tweet_ids.zip?dl=0). Only the tweet IDs are available due to Twitter's policies. The code used in this publication is tagged as [v1.0-icassp_2019](https://github.com/theocjr/social-media-forensics/releases/tag/v1.0-icassp_2019).
+
+The dataset used in our paper [_Authorship Attribution for Social Media Forensics_](https://ieeexplore.ieee.org/abstract/document/7555393) published at _IEEE Transactions on Information Forensics and Security - T-IFS_ is available under request. If you are interested, please send a message to Prof. Dr. Anderson Rocha (anderson.rocha@ic.unicamp.br).The remaining instructions in this page are related to this publication ([tag v1.2-tifs_2016](https://github.com/theocjr/social-media-forensics/releases/tag/v1.2-tifs_2016)).
 
 If you want to use your own dataset of messages, the code expects the following premises:
 
