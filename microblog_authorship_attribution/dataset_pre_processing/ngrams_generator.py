@@ -51,6 +51,11 @@ def command_line_parsing():
                         nargs = '+',
                         default=['all'],
                         help='Features to be used in classification. Default = all.')
+    parser.add_argument('--remove_hapax_legomena', '-r',
+                        dest='remove_hapax_legomena',
+                        action='store_true',
+                        default=False,
+                        help='Remove hapax legomena from the generated features. Default = False.')
     parser.add_argument('--debug', '-d',
                         dest='debug',
                         action='store_true',
@@ -87,7 +92,7 @@ def remove_hapax_legomena(histograms_list):
     for i in range(len(feature_occurrence_sum)):
         if feature_occurrence_sum[i] == 1.0:
             hapax_legomena.append(inverse_vocabulary_array[i])
-    
+
     # remove the hapax legomena
     for hapax in hapax_legomena:
         for histogram in histograms_list:
@@ -103,7 +108,7 @@ def add_postag_id(histogram):
     return aux
 
 
-def ngrams_generator(tweets, features, save_dir):
+def ngrams_generator(tweets, features, save_dir, clean_hapax_legomena):
     char_word_len = None
     if 'char-4-gram' in features:
         logging.debug('\tGenerating char-4-gram features ...')
@@ -113,8 +118,9 @@ def ngrams_generator(tweets, features, save_dir):
             gram_list.append(grams_histogram(grams))
 
         char_word_len = len(gram_list)
-        logging.debug('\tRemoving \'hapax legomena\' ...')
-        remove_hapax_legomena(gram_list)
+        if clean_hapax_legomena:
+            logging.debug('\tRemoving \'hapax legomena\' ...')
+            remove_hapax_legomena(gram_list)
         sklearn.externals.joblib.dump(gram_list, os.sep.join([save_dir, 'char-4-gram.pkl']))
 
     tweets_words = []
@@ -136,8 +142,9 @@ def ngrams_generator(tweets, features, save_dir):
                 gram_list.append(grams_histogram(grams))
             if not char_word_len:
                 char_word_len = len(gram_list)
-            logging.debug('\tRemoving \'hapax legomena\' ...')
-            remove_hapax_legomena(gram_list)
+            if clean_hapax_legomena:
+                logging.debug('\tRemoving \'hapax legomena\' ...')
+                remove_hapax_legomena(gram_list)
             sklearn.externals.joblib.dump(gram_list, ''.join([save_dir, os.sep, 'word-', str(i), '-gram.pkl']))
 
     tweets_pos = []
@@ -157,8 +164,9 @@ def ngrams_generator(tweets, features, save_dir):
             if char_word_len and char_word_len != len(gram_list):
                 logging.error(''.join(['Tweet messages and POS Tags with different sizes for author ', os.path.basename(save_dir), ': ', str(char_word_len), ' and ', str(len(gram_list)), ' respectively. Quitting ...']))
                 sys.exit(1)
-            logging.debug('\tRemoving \'hapax legomena\' ...')
-            remove_hapax_legomena(gram_list)
+            if clean_hapax_legomena:
+                logging.debug('\tRemoving \'hapax legomena\' ...')
+                remove_hapax_legomena(gram_list)
             sklearn.externals.joblib.dump(gram_list, ''.join([save_dir, os.sep, 'pos-', str(i), '-gram.pkl']))
 
 
@@ -175,6 +183,7 @@ if  __name__ == '__main__':
                            '\n\tsource directory data = ', args.source_dir_data,
                            '\n\toutput directory = ', args.dest_dir,
                            '\n\tfeatures = ', str(args.features),
+                           '\n\tremove hapax legomena = ', str(args.remove_hapax_legomena),
                            '\n\tdebug = ', str(args.debug),
                          ]))
 
@@ -194,7 +203,7 @@ if  __name__ == '__main__':
         logging.debug(''.join(['Reading tweets and generating n-grams for file ', filename, ' ...']))
         author_dir = os.sep.join([args.dest_dir, os.path.splitext(os.path.basename(filename))[0]])
         os.makedirs(author_dir)
-        ngrams_generator(messages_persistence.read(filename), args.features, author_dir)
+        ngrams_generator(messages_persistence.read(filename), args.features, author_dir, args.remove_hapax_legomena)
 
     logging.info('Finishing ...')
-    
+
