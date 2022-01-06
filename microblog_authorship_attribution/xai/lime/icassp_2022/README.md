@@ -12,8 +12,8 @@ Percentage of the most relevant character 4-grams that contain elements missed b
   <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (by author in the CONF dataset).</figcaption>
 </figure>
 
-<br>
-<br>
+<div>
+<div>
 
 <figure>
   <img src="./strong_tps_non_alpha_ratio_overall.png" alt=""/>
