@@ -3,20 +3,27 @@
 This page contains supplementary materials of our ICASSP'22 paper: "Explainable Artificial Intelligence for Authorship Attribution on Social Media".
 
 
-![](./strong_tps_non_alpha_ratio_by_author.png)
+## Section 4.4. Coverage of Explanations
 
-*Percentage of most relevant char-4-grams that contain non-alphanumeric characters (by author in the CONF dataset).*
-
-![](./strong_tps_non_alpha_ratio_overall.png)
-*Percentage of most relevant char-4-grams that contain non-alphanumeric characters (overall in the CONF dataset).*
-
-![](./random_non_alpha_ratio_by_author.png)
-*Percentage of most relevant char-4-grams that contain non-alphanumeric characters (by author in the RAND dataset).*
-
-![](./random_non_alpha_ratio_overall.png)
-*Percentage of most relevant char-4-grams that contain non-alphanumeric characters (overall in the RAND dataset).*
+Percentage of the most relevant character 4-grams that contain elements missed by unigram LIME (e.g., space, punctuation, and emojis). Character 4-grams capture these elements and their writing patterns are essential to attribute authorship. However, the original LIME is unable to identify the majority of them, generating poor explanations.
 
 <figure>
   <img src="./strong_tps_non_alpha_ratio_by_author.png" alt=""/>
-  <figcaption>Percentage of most relevant char-4-grams that contain non-alphanumeric characters (by author in the CONF dataset).</figcaption>
+  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (by author in the CONF dataset).</figcaption>
 </figure>
+
+<figure>
+  <img src="./strong_tps_non_alpha_ratio_overall.png" alt=""/>
+  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (overall in the CONF dataset).</figcaption>
+</figure>
+
+<figure>
+  <img src="./random_non_alpha_ratio_by_author.png" alt=""/>
+  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (by author in the RAND dataset).</figcaption>
+</figure>
+
+<figure>
+  <img src="./random_non_alpha_ratio_overall.png" alt=""/>
+  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (overall in the RAND dataset).</figcaption>
+</figure>
+
