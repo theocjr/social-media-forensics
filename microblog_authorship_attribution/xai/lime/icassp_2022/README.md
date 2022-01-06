@@ -3,8 +3,15 @@
 This page contains supplementary materials of our ICASSP'22 paper: "Explainable Artificial Intelligence for Authorship Attribution on Social Media".
 
 
-![image info](./strong_tps_non_alpha_ratio_by_author.png)
+![](./strong_tps_non_alpha_ratio_by_author.png)
+*Percentage of most relevant char-4-grams that contain non-alphanumeric characters (by author in the CONF dataset).*
 
-![image info](./random_non_alpha_ratio_by_author.png)
+![](./strong_tps_non_alpha_ratio_overall.png)
+*Percentage of most relevant char-4-grams that contain non-alphanumeric characters (overall in the CONF dataset).*
 
+![](./random_non_alpha_ratio_by_author.png)
+*Percentage of most relevant char-4-grams that contain non-alphanumeric characters (by author in the RAND dataset).*
+
+![](./random_non_alpha_ratio_overall.png)
+*Percentage of most relevant char-4-grams that contain non-alphanumeric characters (overall in the RAND dataset).*
 
