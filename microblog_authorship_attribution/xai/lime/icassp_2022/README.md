@@ -1,6 +1,6 @@
 # Explainable Artificial Intelligence for Authorship Attribution on Social Media
 
-This page contains supplementary materials of our submitted ICASSP'22 paper (under revision): "_Explainable Artificial Intelligence for Authorship Attribution on Social Media_".
+This page contains supplementary materials of our submitted ICASSP'22 paper (under revision) "_Explainable Artificial Intelligence for Authorship Attribution on Social Media_".
 
 
 ## Section 4.4. Coverage of Explanations
