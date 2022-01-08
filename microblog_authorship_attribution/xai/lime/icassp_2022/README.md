@@ -17,21 +17,10 @@ Here we present a comparison of the explanations offered by the standard unigram
 
 
 <figure>
-  <img src="./example_1_original.pdf" alt=""/>
+  <img src="./example_1_original.png" alt=""/>
 </figure>
 <figure>
-  <img src="./example_1_extended.pdf" alt=""/>
-</figure>
-
-<br>
-<br>
-
-
-<figure>
-  <img src="./example_2_original.pdf" alt=""/>
-</figure>
-<figure>
-  <img src="./example_2_extended.pdf" alt=""/>
+  <img src="./example_1_extended.png" alt=""/>
 </figure>
 
 <br>
@@ -39,10 +28,21 @@ Here we present a comparison of the explanations offered by the standard unigram
 
 
 <figure>
-  <img src="./example_3_original.pdf" alt=""/>
+  <img src="./example_2_original.png" alt=""/>
 </figure>
 <figure>
-  <img src="./example_3_extended.pdf" alt=""/>
+  <img src="./example_2_extended.png" alt=""/>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+  <img src="./example_3_original.png" alt=""/>
+</figure>
+<figure>
+  <img src="./example_3_extended.png" alt=""/>
 </figure>
 
 <br>
