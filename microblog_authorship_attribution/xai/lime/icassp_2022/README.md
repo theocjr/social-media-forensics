@@ -59,8 +59,7 @@ Here we present a comparison of the explanations offered by the standard unigram
 
 | **Representation** | **RAND**                | **T-CONF**              |
 | :---               |          :---:          |          :---:          |
-| :---               | Mean+-Std (Max)         | Mean+-Std (Max)         |
-| :---               |      :---:              |      :---:              |
+|                    | Mean+-Std (Max)         | Mean+-Std (Max)         |
 | unigram            | 55.19 +- 19.74 (89.09)  | 51.62 +- 22.06 (91.47)  |
 | **char-4-gram**    | **9.84 +-7.98 (29.73)** | **7.96+- 6.27 (22.78)** |
 
