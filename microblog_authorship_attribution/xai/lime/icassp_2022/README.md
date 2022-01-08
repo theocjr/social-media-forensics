@@ -53,7 +53,15 @@ Here we present a comparison of the explanations offered by the standard unigram
 
 
 **TODO: figures from Fernanda **
+
+
 ## Section 4.3. Redundancy of Perturbed Samples
+
+| **Representation** | **RAND**        | **T-CONF**      |
+| :---               |      :---:      |      :---:      |
+| unigram            | 55.19 +- 19.74  | 51.62 +- 22.06  |
+| **char-4-gram**    | **9.84 +-7.98** | **7.96+- 6.27** |
+
 
 ## Section 4.4. Coverage of Explanations
 
