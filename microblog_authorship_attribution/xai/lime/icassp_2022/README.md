@@ -57,11 +57,13 @@ Here we present a comparison of the explanations offered by the standard unigram
 
 ## Section 4.3. Redundancy of Perturbed Samples
 
-| **Representation** | **RAND**                | **T-CONF**              |
-| :---               |          :---:          |          :---:          |
-|                    | Mean+-Std (Max)         | Mean+-Std (Max)         |
-| unigram            | 55.19 +- 19.74 (89.09)  | 51.62 +- 22.06 (91.47)  |
-| **char-4-gram**    | **9.84 +-7.98 (29.73)** | **7.96+- 6.27 (22.78)** |
+Below we see the percentage of duplicated perturbed data for samples in RAND and T-CONF subsets, using unigrams and character 4-grams representations applying the model [1]. A lower rate of duplicates means the method generates more varied and less redundant perturbed samples, which leads to better surrogate models and clearer explanations.
+
+| **Representation** | **RAND**                 | **T-CONF**               |
+| :---               |          :---:           |          :---:           |
+|                    | Mean +- Std (Max)        | Mean +- Std (Max)        |
+| unigram            | 55.19 +- 19.74 (89.09)   | 51.62 +- 22.06 (91.47)   |
+| **char-4-gram**    | **9.84 +- 7.98 (29.73)** | **7.96 +- 6.27 (22.78)** |
 
 
 ## Section 4.4. Coverage of Explanations
