@@ -4,20 +4,52 @@ This page contains supplementary materials of our submitted ICASSP'22 paper (und
 
 We present results from experiments running predictions from two models for authorship attribution of small messages described below:
 
-1. Theophilo et al. 2021 [1]
-2. Rocha et al. 2016 [2] 
-
-[1] Authorship Attribution of Social Media Messages. Theophilo, Antonio and Giot, Romain and Rocha, Anderson. IEEE Transactions on Computational Social Systems.. 2021. IEEE.
-
-[2] Authorship attribution for social media forensics. Rocha, Anderson and Scheirer, Walter J and Forstall, Christopher W and Cavalcante, Thiago and Theophilo, Antonio and Shen, Bingyu and Carvalho, Ariadne RB and Stamatatos, Efstathios. IEEE transactions on information forensics and security. 2016. IEEE.
-
+1. Theophilo et al. 2021 - Authorship Attribution of Social Media Messages. Theophilo, Antonio and Giot, Romain and Rocha, Anderson. IEEE Transactions on Computational Social Systems. 2021. IEEE.
+1. Rocha et al. 2016 - Authorship attribution for social media forensics. Rocha, Anderson and Scheirer, Walter J and Forstall, Christopher W and Cavalcante, Thiago and Theophilo, Antonio and Shen, Bingyu and Carvalho, Ariadne RB and Stamatatos, Efstathios. IEEE transactions on information forensics and security. 2016. IEEE.
 
 ## Section 4.1. Dataset Organization
 
-We generated predictions for all samples in the validation set and, from these samples, we defined two subsets for which to generate LIME explanations. The first (RAND) has 1,000 messages randomly chosen (20 messages from each one of the 50 authors), and the second (T-CONF) is the set of all correct predictions with high confidence ($>$ 0.9), consisting of a subset of 2977 samples.
+We generated predictions for all samples in the validation set and, from these samples, we defined, or each model, two subsets for which to generate LIME explanations. The first (RAND) has 1,000 messages randomly chosen (20 messages from each one of the 50 authors), and the second (T-CONF) is the set of all correct predictions with high confidence ($>$ 0.9), consisting of a subset of 2977 samples for the model [1] and 451 samples for model [2].
 
 ## Section 4.2. Interpretation Evaluation
 
+Here we present a comparison of the explanations offered by the standard unigram LIME method and our proposed LIME extension using character n-grams.
+
+
+<figure>
+  <img src="./example_1_original.pdf" alt=""/>
+</figure>
+<figure>
+  <img src="./example_1_extended.pdf" alt=""/>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+  <img src="./example_2_original.pdf" alt=""/>
+</figure>
+<figure>
+  <img src="./example_2_extended.pdf" alt=""/>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+  <img src="./example_3_original.pdf" alt=""/>
+</figure>
+<figure>
+  <img src="./example_3_extended.pdf" alt=""/>
+</figure>
+
+<br>
+<br>
+
+
+**TODO: figures from Fernanda **
 ## Section 4.3. Redundancy of Perturbed Samples
 
 ## Section 4.4. Coverage of Explanations
