@@ -52,15 +52,17 @@ Here we present a comparison of the explanations offered by the standard unigram
 <br>
 
 
-**TODO: figures from Fernanda **
+# **TODO: figures from Fernanda **
 
 
 ## Section 4.3. Redundancy of Perturbed Samples
 
-| **Representation** | **RAND**        | **T-CONF**      |
-| :---               |      :---:      |      :---:      |
-| unigram            | 55.19 +- 19.74  | 51.62 +- 22.06  |
-| **char-4-gram**    | **9.84 +-7.98** | **7.96+- 6.27** |
+| **Representation** | **RAND**                | **T-CONF**              |
+| :---               |          :---:          |          :---:          |
+| :---               | Mean+-Std (Max)         | Mean+-Std (Max)         |
+| :---               |      :---:              |      :---:              |
+| unigram            | 55.19 +- 19.74 (89.09)  | 51.62 +- 22.06 (91.47)  |
+| **char-4-gram**    | **9.84 +-7.98 (29.73)** | **7.96+- 6.27 (22.78)** |
 
 
 ## Section 4.4. Coverage of Explanations
@@ -69,7 +71,7 @@ Percentage of the most relevant character 4-grams that contain elements missed b
 
 <figure>
   <img src="./strong_tps_non_alpha_ratio_by_author.png" alt=""/>
-  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (by author in the CONF dataset).</figcaption>
+  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (by author in the CONF dataset - model [1]).</figcaption>
 </figure>
 
 <br>
@@ -77,7 +79,7 @@ Percentage of the most relevant character 4-grams that contain elements missed b
 
 <figure>
   <img src="./strong_tps_non_alpha_ratio_overall.png" alt=""/>
-  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (overall in the CONF dataset).</figcaption>
+  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (overall in the CONF dataset - model [1]).</figcaption>
 </figure>
 
 <br>
@@ -85,7 +87,7 @@ Percentage of the most relevant character 4-grams that contain elements missed b
 
 <figure>
   <img src="./random_non_alpha_ratio_by_author.png" alt=""/>
-  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (by author in the RAND dataset).</figcaption>
+  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (by author in the RAND dataset - model [1]).</figcaption>
 </figure>
 
 <br>
@@ -93,6 +95,6 @@ Percentage of the most relevant character 4-grams that contain elements missed b
 
 <figure>
   <img src="./random_non_alpha_ratio_overall.png" alt=""/>
-  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (overall in the RAND dataset).</figcaption>
+  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (overall in the RAND dataset - model [1]).</figcaption>
 </figure>
 
