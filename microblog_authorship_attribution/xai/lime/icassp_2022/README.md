@@ -21,6 +21,7 @@ Here we present a comparison of the explanations offered by the standard unigram
 </figure>
 <figure>
   <img src="./example_1_extended.png" alt=""/>
+  <figcaption>Example 1 (model [1]).</figcaption>
 </figure>
 
 <br>
@@ -32,6 +33,7 @@ Here we present a comparison of the explanations offered by the standard unigram
 </figure>
 <figure>
   <img src="./example_2_extended.png" alt=""/>
+  <figcaption>Example 2 (model [1]).</figcaption>
 </figure>
 
 <br>
@@ -43,6 +45,7 @@ Here we present a comparison of the explanations offered by the standard unigram
 </figure>
 <figure>
   <img src="./example_3_extended.png" alt=""/>
+  <figcaption>Example 3 (model [1]).</figcaption>
 </figure>
 
 <br>
