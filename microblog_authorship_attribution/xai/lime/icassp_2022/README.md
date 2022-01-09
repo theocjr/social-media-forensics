@@ -121,12 +121,14 @@ The table below present this measure for models [1] and [2] using the 20 most re
 | Theophilo et al. [1] | 83.80 +- 10.84 (100)  | 81.70 +- 12.47 (100)  |
 | Rocha et al. [2]     | 89.40 +- 8.81 (100)   | 76.86 +- 14.92 (100)  |
 
+<br>
+<br>
 
-Below, we show the same measure for model [1], but now varying the number of relevant character 4-grams.
+The figures below show the same measure applied to model [1], but now varying the number of relevant character 4-grams in different scenarios.
 
 <figure>
   <img src="./strong_tps_non_alpha_ratio_by_author.png" alt=""/>
-  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (by author in the CONF dataset - model [1]).</figcaption>
+  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (by author in the T-CONF dataset - model [1]).</figcaption>
 </figure>
 
 <br>
@@ -134,7 +136,7 @@ Below, we show the same measure for model [1], but now varying the number of rel
 
 <figure>
   <img src="./strong_tps_non_alpha_ratio_overall.png" alt=""/>
-  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (overall in the CONF dataset - model [1]).</figcaption>
+  <figcaption>Percentage of most relevant character 4-grams that contain non-alphanumeric characters (overall in the T-CONF dataset - model [1]).</figcaption>
 </figure>
 
 <br>
