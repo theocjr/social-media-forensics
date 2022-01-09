@@ -1,6 +1,6 @@
 # Explainable Artificial Intelligence for Authorship Attribution on Social Media
 
-This page contains supplementary materials of our submitted ICASSP'22 paper (under revision) "_Explainable Artificial Intelligence for Authorship Attribution on Social Media_".
+This page contains supplementary materials of our submitted ICASSP'22 paper (under revision), "_Explainable Artificial Intelligence for Authorship Attribution on Social Media_."
 
 We present results from experiments running predictions from two models for authorship attribution of small messages described below:
 
@@ -13,7 +13,7 @@ We generated predictions for all samples in the validation set and, from these s
 
 ## Section 4.2. Interpretation Evaluation
 
-Here we present a comparison of the explanations offered by the standard unigram LIME method and our proposed LIME extension using character n-grams. For each pair of images representing an example, the standard unigram LIME explanation is the image above and the proposed LIME extension is below.
+Here we present a comparison of the explanations offered by the standard unigram LIME method and our proposed LIME extension using character n-grams. For each pair of images representing an example, the standard unigram LIME explanation is the image above, and the proposed LIME extension is below.
 
 
 <figure>
@@ -90,7 +90,7 @@ Here we present a comparison of the explanations offered by the standard unigram
 
 ## Section 4.3. Redundancy of Perturbed Samples
 
-Below we see the percentage of duplicated perturbed data for samples in RAND and T-CONF subsets, using unigrams and character 4-grams representations applying the model [1]. A lower rate of duplicates means the method generates more varied and less redundant perturbed samples, which leads to better surrogate models and clearer explanations.
+Below we see the percentage of duplicated perturbed data for samples in RAND and T-CONF subsets, using unigrams and character 4-grams representations applying the model [1]. A lower rate of duplicates means the method generates more varied and less redundant perturbed samples, which leads to better surrogate models and better explanations.
 
 | **Representation** | **RAND**                 | **T-CONF**               |
 | :---               |          :---:           |          :---:           |
@@ -99,7 +99,7 @@ Below we see the percentage of duplicated perturbed data for samples in RAND and
 | **char-4-gram**    | **9.84 +- 7.98 (29.73)** | **7.96 +- 6.27 (22.78)** |
 
 
-Below is the same result for model [2].
+Below is the same result for the model [2].
 
 | **Representation** | **RAND**                   | **T-CONF**               |
 | :---               |           :---:            |          :---:           |
@@ -111,9 +111,9 @@ Below is the same result for model [2].
 
 ## Section 4.4. Coverage of Explanations
 
-In this section, we present the percentage of the most relevant character 4-grams that contain elements missed by unigram LIME (e.g., space, punctuation, and emojis). Character 4-grams capture these elements, and their writing patterns are essential to attribute authorship. However, the original LIME is unable to identify the majority of them, generating poor explanations in the case of authorship attribution of small messages.
+This section presents the percentage of the most relevant character 4-grams that contain elements missed by unigram LIME (e.g., space, punctuation, and emojis). Character 4-grams capture these elements, and their writing patterns are essential to attribute authorship. However, the original LIME is unable to identify the majority of them, generating poor explanations in the case of authorship attribution of small messages.
 
-The table below present this measure for models [1] and [2] using the 20 most relevant character 4-grams for each author in the RAND and T-CONF subsets.
+The table below presents this measure for models [1] and [2] using the 20 most relevant character 4-grams for each author in the RAND and T-CONF subsets.
 
 | **Model**            | **RAND**              | **T-CONF**            |
 | :---                 |        :---:          |         :---:         |
@@ -124,7 +124,7 @@ The table below present this measure for models [1] and [2] using the 20 most re
 <br>
 <br>
 
-The figures below show the same measure applied to model [1], but now varying the number of relevant character 4-grams in different scenarios.
+The figures below show the same measure applied to the model [1], but varying the number of relevant character 4-grams in different scenarios.
 
 <figure>
   <img src="./strong_tps_non_alpha_ratio_by_author.png" alt=""/>
