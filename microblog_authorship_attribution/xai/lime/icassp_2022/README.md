@@ -4,8 +4,8 @@ This page contains supplementary materials of our submitted ICASSP'22 paper (und
 
 We present results from experiments running predictions from two models for authorship attribution of small messages described below:
 
-1. Theophilo et al. 2021 - Authorship Attribution of Social Media Messages. Theophilo, Antonio and Giot, Romain and Rocha, Anderson. IEEE Transactions on Computational Social Systems. 2021. IEEE.
-1. Rocha et al. 2016 - Authorship attribution for social media forensics. Rocha, Anderson and Scheirer, Walter J and Forstall, Christopher W and Cavalcante, Thiago and Theophilo, Antonio and Shen, Bingyu and Carvalho, Ariadne RB and Stamatatos, Efstathios. IEEE transactions on information forensics and security. 2016. IEEE.
+1. Theophilo et al. - Authorship Attribution of Social Media Messages. IEEE Transactions on Computational Social Systems. 2021. IEEE.
+1. Rocha et al. - Authorship attribution for social media forensics. IEEE transactions on information forensics and security. 2016. IEEE.
 
 ## Section 4.1. Dataset Organization
 
@@ -17,47 +17,22 @@ Here we present a comparison of the explanations offered by the standard unigram
 
 
 <figure>
+  <figcaption>Example 1: Model 1 - original and extended.</figcaption>
   <img src="./example_1_original.png" alt=""/>
 </figure>
 <figure>
   <img src="./example_1_extended.png" alt=""/>
-  <figcaption>Example 1 (model [1]).</figcaption>
 </figure>
 
 <br>
 <br>
 
-
 <figure>
-  <img src="./example_2_original.png" alt=""/>
-</figure>
-<figure>
-  <img src="./example_2_extended.png" alt=""/>
-  <figcaption>Example 2 (model [1]).</figcaption>
-</figure>
-
-<br>
-<br>
-
-
-<figure>
-  <img src="./example_3_original.png" alt=""/>
-</figure>
-<figure>
-  <img src="./example_3_extended.png" alt=""/>
-  <figcaption>Example 3 (model [1]).</figcaption>
-</figure>
-
-<br>
-<br>
-
-
-<figure>
+  <figcaption>Example 1: Model 2 - original and extended.</figcaption>
   <img src="./example_1_original_method_2.png" alt=""/>
 </figure>
 <figure>
   <img src="./example_1_extended_method_2.png" alt=""/>
-  <figcaption>Example 1 (model [2]).</figcaption>
 </figure>
 
 <br>
@@ -65,11 +40,22 @@ Here we present a comparison of the explanations offered by the standard unigram
 
 
 <figure>
+  <figcaption>Example 2: Model 1 - original and extended.</figcaption>
+  <img src="./example_2_original.png" alt=""/>
+</figure>
+<figure>
+  <img src="./example_2_extended.png" alt=""/>
+</figure>
+
+<br>
+<br>
+
+<figure>
+  <figcaption>Example 2: Model 2 - original and extended.</figcaption>
   <img src="./example_2_original_method_2.png" alt=""/>
 </figure>
 <figure>
   <img src="./example_2_extended_method_2.png" alt=""/>
-  <figcaption>Example 2 (model [2]).</figcaption>
 </figure>
 
 <br>
@@ -77,11 +63,22 @@ Here we present a comparison of the explanations offered by the standard unigram
 
 
 <figure>
+  <figcaption>Example 3: Model 1 - original and extended.</figcaption>
+  <img src="./example_3_original.png" alt=""/>
+</figure>
+<figure>
+  <img src="./example_3_extended.png" alt=""/>
+</figure>
+
+<br>
+<br>
+
+<figure>
+  <figcaption>Example 3: Model 2 - original and extended.</figcaption>
   <img src="./example_3_original_method_2.png" alt=""/>
 </figure>
 <figure>
   <img src="./example_3_extended_method_2.png" alt=""/>
-  <figcaption>Example 3 (model [2]).</figcaption>
 </figure>
 
 <br>
