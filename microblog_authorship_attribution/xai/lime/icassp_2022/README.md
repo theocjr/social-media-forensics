@@ -94,9 +94,19 @@ Below we see the percentage of duplicated perturbed data for samples in RAND and
 
 | **Representation** | **RAND**                 | **T-CONF**               |
 | :---               |          :---:           |          :---:           |
-|                    | Mean +- Std (Max)        | Mean +- Std (Max)        |
+|                    | Mean +- Std Dev (Max)    | Mean +- Std Dev (Max)    |
 | unigram            | 55.19 +- 19.74 (89.09)   | 51.62 +- 22.06 (91.47)   |
 | **char-4-gram**    | **9.84 +- 7.98 (29.73)** | **7.96 +- 6.27 (22.78)** |
+
+
+Below is the same result for model [2].
+
+| **Representation** | **RAND**                   | **T-CONF**               |
+| :---               |           :---:            |          :---:           |
+|                    | Mean +- Std Dev (Max)      | Mean +- Std Dev (Max)    |
+| unigram            | 59.34 +- 35.96 (99.96)     | 57.13 +- 32.90 (99.92)   |
+| **char-4-gram**    | **10.88 +- 19.32 (99.68)** | **5.12 +- 7.92 (69.44)** |
+
 
 
 ## Section 4.4. Coverage of Explanations
