@@ -52,7 +52,40 @@ Here we present a comparison of the explanations offered by the standard unigram
 <br>
 
 
-# **TODO: figures from Fernanda **
+<figure>
+  <img src="./example_1_original_method_2.png" alt=""/>
+</figure>
+<figure>
+  <img src="./example_1_extended_method_2.png" alt=""/>
+  <figcaption>Example 1 (model [2]).</figcaption>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+  <img src="./example_2_original_method_2.png" alt=""/>
+</figure>
+<figure>
+  <img src="./example_2_extended_method_2.png" alt=""/>
+  <figcaption>Example 2 (model [2]).</figcaption>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+  <img src="./example_3_original_method_2.png" alt=""/>
+</figure>
+<figure>
+  <img src="./example_3_extended_method_2.png" alt=""/>
+  <figcaption>Example 3 (model [2]).</figcaption>
+</figure>
+
+<br>
+<br>
 
 
 ## Section 4.3. Redundancy of Perturbed Samples
