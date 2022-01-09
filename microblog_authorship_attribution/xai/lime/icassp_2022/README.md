@@ -13,7 +13,7 @@ We generated predictions for all samples in the validation set and, from these s
 
 ## Section 4.2. Interpretation Evaluation
 
-Here we present a comparison of the explanations offered by the standard unigram LIME method and our proposed LIME extension using character n-grams.
+Here we present a comparison of the explanations offered by the standard unigram LIME method and our proposed LIME extension using character n-grams. For each pair of images representing an example, the standard unigram LIME explanation is the image above and the proposed LIME extension is below.
 
 
 <figure>
