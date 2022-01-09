@@ -9,7 +9,7 @@ We present results from experiments running predictions from two models for auth
 
 ## Section 4.1. Dataset Organization
 
-We generated predictions for all samples in the validation set and, from these samples, we defined, or each model, two subsets for which to generate LIME explanations. The first (RAND) has 1,000 messages randomly chosen (20 messages from each one of the 50 authors), and the second (T-CONF) is the set of all correct predictions with high confidence ($>$ 0.9), consisting of a subset of 2977 samples for the model [1] and 451 samples for model [2].
+We generated predictions for all samples in the validation set and, from these samples, we defined, for each model, two subsets for which to generate LIME explanations. The first (RAND) has 1,000 messages randomly chosen (20 messages from each one of the 50 authors), and the second (T-CONF) is the set of all correct predictions with high confidence ($>$ 0.9), consisting of a subset of 2977 samples for the model [1] and 451 samples for model [2].
 
 ## Section 4.2. Interpretation Evaluation
 
