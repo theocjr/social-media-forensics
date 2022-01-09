@@ -111,7 +111,18 @@ Below is the same result for model [2].
 
 ## Section 4.4. Coverage of Explanations
 
-Percentage of the most relevant character 4-grams that contain elements missed by unigram LIME (e.g., space, punctuation, and emojis). Character 4-grams capture these elements, and their writing patterns are essential to attribute authorship. However, the original LIME is unable to identify the majority of them, generating poor explanations in the case of authorship attribution of small messages.
+In this section, we present the percentage of the most relevant character 4-grams that contain elements missed by unigram LIME (e.g., space, punctuation, and emojis). Character 4-grams capture these elements, and their writing patterns are essential to attribute authorship. However, the original LIME is unable to identify the majority of them, generating poor explanations in the case of authorship attribution of small messages.
+
+The table below present this measure for models [1] and [2] using the 20 most relevant character 4-grams for each author in the RAND and T-CONF subsets.
+
+| **Model**            | **RAND**              | **T-CONF**            |
+| :---                 |        :---:          |         :---:         |
+|                      | Mean +- Std Dev (Max) | Mean +- Std Dev (Max) |
+| Theophilo et al. [1] | 83.80 +- 10.84 (100)  | 81.70 +- 12.47 (100)  |
+| Rocha et al. [2]     | 89.40 +- 8.81 (100)   | 76.86 +- 14.92 (100)  |
+
+
+Below, we show the same measure for model [1], but now varying the number of relevant character 4-grams.
 
 <figure>
   <img src="./strong_tps_non_alpha_ratio_by_author.png" alt=""/>
