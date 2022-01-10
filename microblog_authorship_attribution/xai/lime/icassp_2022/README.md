@@ -15,6 +15,8 @@ We generated predictions for all samples in the validation set and, from these s
 
 Here we present a comparison of the explanations offered by the standard unigram LIME method and our proposed LIME extension using character n-grams. For each pair of images representing an example, the standard unigram LIME explanation is the image above, and the proposed LIME extension is below.
 
+In most comparisons, we observed a scenario with little overlap between the most relevant unigrams and character 4-grams. However, the most significant finding is that the most relevant character 4-grams encompass spaces and punctuation, which are ignored by design by the unigram representation. This highlights the type of characteristics learned by the attribution model, emphasizing its focus on writing patterns rather than semantic. Additionally, it reinforces the importance of using an explainability technique that is aligned with the target model representation.
+
 
 <figure>
   <figcaption>Example 1: Model 1 - original and extended.</figcaption>
@@ -105,6 +107,8 @@ Below is the same result for the model [2].
 | **char-4-gram**    | **10.88 +- 19.32 (99.68)** | **5.12 +- 7.92 (69.44)** |
 
 
+The difference between the two LIME approaches (unigram and character 4-grams) is significant independently if we consider predictions over random or high confident samples. This indicates that using unigrams to explain the model decisions locally is not recommended for short messages, as they restrict the number of possible perturbations to train the surrogate model.
+
 
 ## Section 4.4. Coverage of Explanations
 
@@ -122,6 +126,8 @@ The table below presents this measure for models [1] and [2] using the 20 most r
 <br>
 
 The figures below show the same measure applied to the model [1], but varying the number of relevant character 4-grams in different scenarios.
+
+We can see that, on average, more than 75% of the most relevant character 4-grams contain non-alphabetical elements ignored by the unigram LIME. This is in line with previous works that confirm the importance of these textual elements for authorship attribution of short messages.
 
 <figure>
   <img src="./strong_tps_non_alpha_ratio_by_author.png" alt=""/>
