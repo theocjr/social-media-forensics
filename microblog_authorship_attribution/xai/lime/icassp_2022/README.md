@@ -99,7 +99,6 @@ Below we see the percentage of duplicated perturbed data for samples in RAND and
 | unigram            | 55.19 +- 19.74 (89.09)   | 51.62 +- 22.06 (91.47)   |
 | **char-4-gram**    | **9.84 +- 7.98 (29.73)** | **7.96 +- 6.27 (22.78)** |
 
-
 Below is the same result for the model [2].
 
 | **Representation** | **RAND**                   | **T-CONF**               |
@@ -125,9 +124,6 @@ The table below presents this measure for models [1] and [2] using the 20 most r
 |                      | Mean +- Std Dev (Max) | Mean +- Std Dev (Max) |
 | Theophilo et al. [1] | 83.80 +- 10.84 (100)  | 81.70 +- 12.47 (100)  |
 | Rocha et al. [2]     | 89.40 +- 8.81 (100)   | 76.86 +- 14.92 (100)  |
-
-<br>
-<br>
 
 The figures below show the same measure applied to the model [1], but varying the number of relevant character 4-grams in different scenarios.
 
