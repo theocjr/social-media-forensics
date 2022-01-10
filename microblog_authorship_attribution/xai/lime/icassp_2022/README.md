@@ -7,6 +7,9 @@ We present results from experiments running predictions from two models for auth
 1. Theophilo et al. - Authorship Attribution of Social Media Messages. IEEE Transactions on Computational Social Systems. 2021. IEEE.
 1. Rocha et al. - Authorship attribution for social media forensics. IEEE transactions on information forensics and security. 2016. IEEE.
 
+<br>
+<br>
+
 ## Section 4.1. Dataset Organization
 
 We generated predictions for all samples in the validation set and, from these samples, we defined, for each model, two subsets for which to generate LIME explanations. The first (RAND) has 1,000 messages randomly chosen (20 messages from each one of the 50 authors), and the second (T-CONF) is the set of all correct predictions with high confidence ($>$ 0.9), consisting of a subset of 2977 samples for the model [1] and 451 samples for model [2].
