@@ -11,6 +11,9 @@ We present results from experiments running predictions from two models for auth
 
 We generated predictions for all samples in the validation set and, from these samples, we defined, for each model, two subsets for which to generate LIME explanations. The first (RAND) has 1,000 messages randomly chosen (20 messages from each one of the 50 authors), and the second (T-CONF) is the set of all correct predictions with high confidence ($>$ 0.9), consisting of a subset of 2977 samples for the model [1] and 451 samples for model [2].
 
+<br>
+<br>
+
 ## Section 4.2. Interpretation Evaluation
 
 Here we present a comparison of the explanations offered by the standard unigram LIME method and our proposed LIME extension using character n-grams. For each pair of images representing an example, the standard unigram LIME explanation is the image above, and the proposed LIME extension is below.
@@ -86,7 +89,6 @@ In all comparisons, we observed a scenario with little overlap between the most 
 <br>
 <br>
 
-
 ## Section 4.3. Redundancy of Perturbed Samples
 
 Below we see the percentage of duplicated perturbed data for samples in RAND and T-CONF subsets, using unigrams and character 4-grams representations applying the model [1]. A lower rate of duplicates means the method generates more varied and less redundant perturbed samples, which leads to better surrogate models and better explanations.
@@ -109,6 +111,8 @@ Below is the same result for the model [2].
 
 The difference between the two LIME approaches (unigram and character 4-grams) is significant independently if we consider predictions over random or high confident samples. This indicates that using unigrams to explain the model decisions locally is not recommended for short messages, as they restrict the number of possible perturbations to train the surrogate model.
 
+<br>
+<br>
 
 ## Section 4.4. Coverage of Explanations
 
