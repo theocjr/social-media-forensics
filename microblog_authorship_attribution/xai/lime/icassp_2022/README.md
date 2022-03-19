@@ -5,7 +5,7 @@ This page contains supplementary materials of our submitted ICASSP'22 paper (und
 We present results from experiments running predictions from two models for authorship attribution of small messages described below:
 
 1. Theophilo et al. - Authorship Attribution of Social Media Messages. IEEE Transactions on Computational Social Systems. 2021. IEEE.
-1. Rocha et al. - Authorship attribution for social media forensics. IEEE transactions on information forensics and security. 2016. IEEE.
+1. Rocha et al. - Authorship Attribution for Social Media Forensics. IEEE Transactions on Information Forensics and Security. 2016. IEEE.
 
 <br>
 <br>
