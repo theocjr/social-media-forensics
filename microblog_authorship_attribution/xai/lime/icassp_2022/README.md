@@ -1,6 +1,6 @@
 # Explainable Artificial Intelligence for Authorship Attribution on Social Media
 
-This page contains supplementary materials of our submitted ICASSP'22 paper (under revision), "_Explainable Artificial Intelligence for Authorship Attribution on Social Media_."
+This page contains supplementary materials of our our paper published at the [2022 International Conference on Acoustics, Speech, and Signal Processing - ICASSP](https://ieeexplore.ieee.org/abstract/document/9746262) ([BibTeX citation](https://github.com/theocjr/social-media-forensics/tree/master/microblog_authorship_attribution/xai/lime/icassp_2022/citation.bib)).
 
 We present results from experiments running predictions from two models for authorship attribution of small messages described below:
 
